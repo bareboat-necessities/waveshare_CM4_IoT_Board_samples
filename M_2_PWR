@@ -1,0 +1,8 @@
+#! /bin/bash
+echo Exporting pin 6
+echo 6 > /sys/class/gpio/export
+echo Setting direction to out.
+echo out > /sys/class/gpio/gpio6/direction
+echo Setting pin $1
+echo $1 > /sys/class/gpio/gpio6/value
+
